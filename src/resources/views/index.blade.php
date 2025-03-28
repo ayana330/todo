@@ -22,8 +22,7 @@
   <form class="create-form" action="/todos" method="post">
     @csrf  
     <div class="create-form__item">
-      <input class="create-form__item-input" type="text" name="content">
-      value="{{ old('content') }}"
+      <input class="create-form__item-input" type="text" name="content" value="{{ old('content') }}"
       />
       <select class="create-form__item-select">
         <option value="">カテゴリ</option>

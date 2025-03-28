@@ -12,7 +12,7 @@ class Todo extends Model
     protected $fillable = [
         'category_id',
         'content'
-    ]
+    ];
     
     public function category()
     {
