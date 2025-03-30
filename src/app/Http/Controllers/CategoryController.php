@@ -22,4 +22,11 @@ public function store(Request $request)
 
   return redirect('/categories')->with('message', 'カテゴリを作成しました');
 }
+  public function destroy(Request $request)
+{
+  Category::find($request->id)->delete();
+
+  return redirect('/categories')->with('message', 'カテゴリを削除しました');
+}
+
 }
